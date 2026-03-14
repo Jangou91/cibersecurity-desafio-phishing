@@ -1,21 +1,38 @@
-# Phishing para captura de senhas do Facebook
+# Simulação de Phishing para Fins Educacionais
 
-### Ferramentas
+> **Aviso:** Este repositório documenta um laboratório educacional 
+> realizado como parte do Bootcamp de Cibersegurança (DIO). 
+> O objetivo é compreender vetores de ataque de engenharia social 
+> para fins de defesa e conscientização. Ambiente controlado e isolado.
+
+## Objetivo
+
+Demonstrar como ataques de phishing funcionam na prática para:
+- Compreender o vetor de ataque e saber defendê-lo
+- Embasar políticas de conscientização de usuários
+- Evidenciar a necessidade de MFA (autenticação multifator)
+
+## Ferramentas
 
 - Kali Linux
-- setoolkit
+- SET (Social Engineering Toolkit)
 
-### Configurando o Phishing no Kali Linux
+## Técnica Demonstrada
 
-- Acesso root: ``` sudo su ```
-- Iniciando o setoolkit: ``` setoolkit ```
-- Tipo de ataque: ``` Social-Engineering Attacks ```
-- Vetor de ataque: ``` Web Site Attack Vectors ```
-- Método de ataque: ```Credential Harvester Attack Method ```
-- Método de ataque: ``` Site Cloner ```
-- Obtendo o endereço da máquina: ``` ifconfig ```
-- URL para clone: http://www.facebook.com
+- Tipo: Social Engineering Attack
+- Vetor: Web Site Attack Vectors  
+- Método: Credential Harvester + Site Cloner
 
-### Resutados
+## Resultado
 
-![Alt text](./passwd.png "Optional title")
+Simulação bem-sucedida em ambiente controlado, demonstrando 
+a eficácia do vetor e a necessidade de treinamento de usuários.
+
+![Resultado do lab](./passwd.png)
+
+## Aprendizado Defensivo
+
+1. Implementar MFA em todos os sistemas
+2. Treinar usuários para identificar páginas falsas
+3. Verificar URLs antes de inserir credenciais
+4. Monitorar acessos atípicos via SIEM
